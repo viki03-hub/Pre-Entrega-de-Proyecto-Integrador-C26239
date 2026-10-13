@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre nuestros productos y conoce las opiniones de nuestros clientes.">
+  <title>Esencia | Tienda online</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <a class="logo" href="#inicio">esencia<span>.</span></a>
+
+    <nav aria-label="Navegación principal">
+      <ul class="nav-list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">DISEÑO CON PROPÓSITO</p>
+        <h1>Pequeños detalles,<br>grandes momentos.</h1>
+        <p>Descubre productos pensados para hacer
+          de cada espacio un lugar especial.</p>
+        <a class="button" href="#productos">Explorar productos</a>
+      </div>
+    </section>
+
+    <section class="products section" id="productos">
+      <div class="section-heading">
+        <p class="eyebrow">NUESTRA SELECCIÓN</p>
+        <h2>Productos destacados</h2>
+      </div>
+
+      <div class="product-list">
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=700&q=80"
+               alt="Jarrón decorativo de cerámica" loading="lazy">
+          <div class="product-info">
+            <h3>Jarrón artesanal</h3>
+            <p>Diseño minimalista para tu hogar.</p>
+            <span class="price">$24.900</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=700&q=80"
+               alt="Vela aromática decorativa" loading="lazy">
+          <div class="product-info">
+            <h3>Vela aromática</h3>
+            <p>Un aroma para cada momento.</p>
+            <span class="price">$12.500</span>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=700&q=80"
+               alt="Objeto decorativo de interior" loading="lazy">
+          <div class="product-info">
+            <h3>Decoración natural</h3>
+            <p>Texturas y detalles atemporales.</p>
+            <span class="price">$18.900</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews section" id="resenas">
+      <div class="section-heading">
+        <p class="eyebrow">EXPERIENCIAS REALES</p>
+        <h2>Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <div class="review-grid">
+        <article class="review-card">
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>"Los productos son hermosos y llegaron en perfecto estado."</p>
+          <h3>— Martina G.</h3>
+        </article>
+
+        <article class="review-card">
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>"Me encantó la calidad y la atención. ¡Volvería a comprar!"</p>
+          <h3>— Lucas R.</h3>
+        </article>
+
+        <article class="review-card">
+          <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+          <p>"Diseños simples y elegantes. Exactamente lo que buscaba."</p>
+          <h3>— Sofía M.</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="contact-intro">
+        <p class="eyebrow">ESTAMOS PARA AYUDARTE</p>
+        <h2>Hablemos</h2>
+        <p>¿Tienes alguna pregunta? Escríbenos y te responderemos.</p>
+      </div>
+
+      <!-- Reemplaza TU_ID por el identificador de tu formulario Formspree -->
+      <form class="contact-form"
+            action="https://formspree.io/f/TU_ID"
+            method="POST">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre"
+               placeholder="Tu nombre" autocomplete="name" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email"
+               placeholder="tu@email.com" autocomplete="email" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5"
+                  placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+        <button class="button" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <section class="multimedia section">
+      <div class="section-heading">
+        <p class="eyebrow">INSPIRACIÓN</p>
+        <h2>Un espacio para disfrutar</h2>
+      </div>
+
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+          title="Video de inspiración"
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#inicio">esencia<span>.</span></a>
+    <p>Diseñado con dedicación · © 2026 Esencia</p>
+    <a href="#inicio">Volver al inicio ↑</a>
+  </footer>
+
+</body>
+</html>
